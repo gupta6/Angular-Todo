@@ -1,0 +1,9 @@
+<header>
+    <h1 appRedEl>{{ title | uppercase }}</h1>
+    <h2>{{30 | usdInr:72:3}}</h2>
+    <app-button 
+    text="{{showAddTask ? 'Close' : 'Add'}}" 
+    color="{{showAddTask ? 'red' : 'green'}}" 
+    (btnClick)="toggleAddTask()">
+    </app-button>
+</header>

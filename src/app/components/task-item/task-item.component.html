@@ -1,0 +1,5 @@
+<div class="task" [ngClass]="{reminder: task.reminder}" (dblclick)="onDoubleClick()" > 
+    <!-- [ngClass]="{className: condition /class will only applied if condition is true/}" -->
+<h3>{{task.text}} <fa-icon (click)="onCrossClick()" [ngStyle]="{'color': 'red'}" [icon]="faTimes" ></fa-icon></h3>
+<p>{{task.day}}</p>
+</div>
